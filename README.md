@@ -27,3 +27,7 @@ bash install_flutter_complete.sh
 
 
 wget -qO- https://termuxvoid.github.io/apt/termuxvoid.gpg | gpg --dearmor | tee $PREFIX/etc/apt/trusted.gpg.d/termuxvoid.gpg > /dev/null
+
+
+
+echo "deb [arch=all,aarch64] https://termuxvoid.github.io/apt/ termuxvoid main" | tee $PREFIX/etc/apt/sources.list.d/termuxvoid.list
