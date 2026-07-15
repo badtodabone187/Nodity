@@ -19,15 +19,5 @@ samples, guidance on mobile development, and a full API reference.
 
 
 
-pkg update && pkg upgrade -y
-pkg install -y curl
-curl -L https://raw.githubusercontent.com/ImL1s/termux-flutter-wsl/master/install_flutter_complete.sh -o install_flutter_complete.sh
-bash install_flutter_complete.sh
-
-
-
-wget -qO- https://termuxvoid.github.io/apt/termuxvoid.gpg | gpg --dearmor | tee $PREFIX/etc/apt/trusted.gpg.d/termuxvoid.gpg > /dev/null
-
-
-
-echo "deb [arch=all,aarch64] https://termuxvoid.github.io/apt/ termuxvoid main" | tee $PREFIX/etc/apt/sources.list.d/termuxvoid.list
+echo "sdk.dir=$PREFIX/share/android-sdk" > local.properties
+echo "flutter.sdk=$PREFIX/share/flutter" >> local.properties
