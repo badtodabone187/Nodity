@@ -23,3 +23,7 @@ pkg update && pkg upgrade -y
 pkg install -y curl
 curl -L https://raw.githubusercontent.com/ImL1s/termux-flutter-wsl/master/install_flutter_complete.sh -o install_flutter_complete.sh
 bash install_flutter_complete.sh
+
+
+
+wget -qO- https://termuxvoid.github.io/apt/termuxvoid.gpg | gpg --dearmor | tee $PREFIX/etc/apt/trusted.gpg.d/termuxvoid.gpg > /dev/null
