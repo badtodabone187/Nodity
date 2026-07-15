@@ -18,6 +18,5 @@ samples, guidance on mobile development, and a full API reference.
 
 
 
-
-echo "sdk.dir=$PREFIX/share/android-sdk" > local.properties
-echo "flutter.sdk=$PREFIX/share/flutter" >> local.properties
+pkg update && pkg install proot-distro -y
+proot-distro install ubuntu
