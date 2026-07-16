@@ -18,5 +18,6 @@ samples, guidance on mobile development, and a full API reference.
 
 
 
-pkg update && pkg install proot-distro -y
-proot-distro install ubuntu
+pkg install wget curl -y
+wget https://raw.githubusercontent.com/Hax4us/TermuxAlpine/master/alpine.sh
+bash alpine.sh
